@@ -1,0 +1,73 @@
+/* General styles */
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    display: flex;
+    align-items: center;
+}
+
+.logoutImg {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        margin-top: 10px;
+    }
+
+    .pic {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .pic {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logoutImg {
+        flex-direction: column;
+    }
+
+    .logoutBox {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+}

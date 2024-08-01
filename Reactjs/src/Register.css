@@ -1,0 +1,225 @@
+.outerdiv {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h11 {
+    padding: 5px;
+    color: #08345b;
+    text-align: center;
+}
+
+.innerdiv {
+    width: 800px;
+    height: 475px;
+    min-width: 400px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.288);
+}
+
+.imagediv {
+    width: 400px;
+    height: 460px;
+    min-width: 200px;
+    display: flex;
+    border-radius: 15px 0px 0px 15px;
+    position: relative;
+}
+
+.formdiv {
+    width: 400px;
+    height: 460px;
+    min-width: 200px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 0px 15px 15px 0px;
+    position: relative;
+}
+
+.myimg {
+    width: 350px;
+    height: 260px;
+    position: absolute;
+    bottom: 100px;
+    left: 36px;
+    min-width: 200px;
+}
+
+.my-form {
+    display: grid;
+    gap: 0px;
+    width: 95%;
+    margin: 15px;
+    padding: 0;
+}
+
+.registerbtn2 {
+    background-color: #08345b;
+    color: white;
+    border: unset;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+    font-size: 15px;
+    height: 45px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.text1 {
+    border-radius: 5px;
+    border: 2px solid #08345b;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    background-color: #e1ecfe;
+    color: black;
+    height: 45px;
+    width: calc(100% - 24px);
+    margin-top: 5px;
+}
+
+.registerbtn2:hover {
+    background-color: #0e487a;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.input:focus {
+    border: unset
+}
+
+.registertext1111 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: default;
+}
+
+.alreadyregisteredtext {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0px;
+    right: 16px;
+    text-transform: capitalize;
+    cursor: default;
+}
+
+.togglebtn {
+    color: #0e487a;
+    cursor: pointer;
+    padding-left: 5px;
+    text-decoration: unset;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .innerdiv {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .imagediv,
+    .formdiv {
+        width: 100%;
+        height: auto;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .myimg {
+        width: 200px;
+        height: auto;
+        position: static;
+        margin: auto;
+    }
+
+    .alreadyregisteredtext {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .innerdiv {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .imagediv,
+    .formdiv {
+        width: 100%;
+        height: auto;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .myimg {
+        width: 150px;
+        height: auto;
+    }
+
+    .my-form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .text1,
+    .registerbtn2 {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .innerdiv {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .imagediv,
+    .formdiv {
+        width: 100%;
+        height: auto;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .myimg {
+        width: 120px;
+        height: auto;
+    }
+
+    .my-form {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .text1,
+    .registerbtn2 {
+        width: calc(100% - 10px);
+    }
+
+    .h11 {
+        font-size: 18px;
+    }
+
+    .registertext1111,
+    .alreadyregisteredtext {
+        font-size: 14px;
+    }
+}

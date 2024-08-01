@@ -1,0 +1,158 @@
+/* LogIn.css */
+
+/* Base styles */
+.box {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+.loginPrompt {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    background-color: #f9efe3;
+    border-radius: 15px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.296);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.imgDiv {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    background-color: #f9efe3;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgLogin {
+    width: 100%;
+    /* Adjusted for smaller screens */
+    max-width: none;
+    /* Ensure image doesn't exceed container */
+    height: auto;
+    border-radius: 15px 0 0 15px;
+}
+
+.logintext {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.loginDiv {
+    width: 60%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.loginDiv input,
+.loginbtn {
+    width: 100%;
+    height: 45px;
+    margin: 7px 0;
+    border-radius: 5px;
+    background-color: #e8f0fe;
+    border: 2px solid #08345b;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.loginbtn {
+    background-color: #08345b;
+    color: white;
+    font-size: 15px;
+}
+
+.didnthaveacc {
+    text-align: left;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.acc1 {
+    text-decoration: none;
+    color: black;
+}
+
+.acc12 {
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .loginPrompt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgDiv {
+        width: 60%;
+        max-width: none;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .imgLogin {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .loginDiv {
+        width: 100%;
+        max-width: none;
+        padding: 20px 0;
+    }
+
+    .loginDiv input,
+    .loginbtn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .loginPrompt {
+        padding: 15px;
+    }
+
+    .imgDiv {
+        height: auto;
+    }
+
+    .imgLogin {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .loginDiv {
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .loginPrompt {
+        padding: 10px;
+    }
+
+    .imgDiv {
+        height: auto;
+    }
+
+    .logintext {
+        font-size: 14px;
+    }
+}

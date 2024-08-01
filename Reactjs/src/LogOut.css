@@ -1,0 +1,8 @@
+.profile {
+    background-color: blue;
+    margin-top: 90px;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    margin-left: 80%;
+}
